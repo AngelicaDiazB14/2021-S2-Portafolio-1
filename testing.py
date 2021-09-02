@@ -15,7 +15,7 @@ def test_divisionRecusivo_1():
     assert portafolio1.divisionRecusivo(25, 5) == 5
     
 def test_divisionRecusivo_2():
-    assert portafolio1.divisionRecusivo(25, 0) == 'Error: División entre cero'    
+    assert isinstance(portafolio1.divisionRecusivo(25, 0), str) == isinstance('Error: División entre cero', str)
     
 ###########################################################################    
 
@@ -39,7 +39,7 @@ def test_indiceNumero_1():
     assert portafolio1.indiceNumero(1335, 3) == 5
     
 def test_indiceNumero_2():
-    assert portafolio1.indiceNumero(1335, 8) == 'Error: Indice fuera del rango del número'
+    assert isinstance(portafolio1.indiceNumero(1335, 8), str) == isinstance('Error: Indice fuera del rango del número', str)
     
 ###########################################################################    
 
@@ -47,4 +47,4 @@ def test_cortarNumero_1():
     assert portafolio1.cortarNumero(1335, 1, 2) == 33
 
 def test_cortarNumero_2():
-    assert portafolio1.cortarNumero(1335, 8, 2) == 'Error: Indices fuera del rango del número'  
+    assert isinstance(portafolio1.cortarNumero(1335, 8, 2), str) == isinstance('Error: Indices fuera del rango del número', str)  
