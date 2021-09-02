@@ -5,7 +5,7 @@ Recordar hacer las validaciones de cada una de las restricciones
 
 ## divisores(num)
 Imprimir los divisores de un número de manera descendente.
-Solo números enteros positivos
+Solo números enteros positivos.
 
 ```python
 >>>divisores(24)
@@ -13,8 +13,8 @@ Solo números enteros positivos
 ```
 
 ## potenciaRecusivo(base, exponente)  
-Potencia de un número base elevado a un número exponente sin utilizar el operador de potencia
-Para ambos parámtros solo números enteros positivos
+Potencia de un número base elevado a un número exponente sin utilizar el operador de potencia.
+Para ambos parámtros solo números enteros positivos.
 
 ```python
 >>>potenciaRecusivo(5, 2)
@@ -22,42 +22,53 @@ Para ambos parámtros solo números enteros positivos
 ```
 
 ## divisionRecusivo(dividendo, divisor)
-Resultado de la división entera un número “dividendo” entre un número “divisor” sin utilizar el operador de división
-Para ambos parámtros solo números enteros positivos
-Tomar en cuenta la divisón entre cero no es permitido
+Resultado de la división entera un número “dividendo” entre un número “divisor” sin utilizar el operador de división.
+Para ambos parámtros solo números enteros positivos.
+Tomar en cuenta la divisón entre cero no es permitido.
 
 ```python
 >>>divisionRecusivo(25, 5)
 5
+>>>divisionRecusivo(25, 0)
+'Error: División entre cero'  
 ```
 
 ## corrimientoAEntero(num)
-Corrimientos al entero, pasar los números de la parte decimal a la parte entera. 
-Mantener el signo en el caso que sea negativo
+Corrimientos al entero, pasar los números de la parte decimal a la parte entera.
+Mantener el signo en el caso que sea negativo.
 
 ```python
 >>>corrimientoAEntero(133.5)   
 1335
+>>>corrimientoAEntero(-133.5)   
+-1335
 ```
 ## contarDigitosFlotante(num)
-Devolver la cantidad de dígitos que tiene esta representación numérica, pero esta vez tomando en cuenta los dógitos de la parte de los decimales. El número puede ser positivos o negativos
+Devolver la cantidad de dígitos que tiene esta representación numérica, pero esta vez tomando en cuenta los dígitos de la parte de los decimales. 
+El número puede ser positivos o negativos.
 ```python
 >>>contarDigitosFlotante(133.578)
 6
+>>>contarDigitosFlotante(-133.578)
+6
 ```
 ## indiceNumero(num, indice)
-Retorna el dígito del número según índices
-Para ambos parámtros solo números enteros positivos
+Retorna el dígito del número según índices.
+Para ambos parámtros solo números enteros positivos.
 ```python
 >>>indiceNumero(1335, 3)  	
 5
+>>>indiceNumero(1335, 8)
+'Error: Indice fuera del rango del número'
 ```
 ## cortarNumero(num, ini, fin)
 Construir una función que reciba un número y ordenados de manera ascendente.
-Para ambos parámtros solo números enteros positivos
-Verificar que los parámtros ini y fin no sobre pasen el largo del número
+Para ambos parámtros solo números enteros positivos.
+Verificar que los parámtros ini y fin no sobre pasen el largo del número.
 ```python
 >>>cortarNumero(1335, 1, 2)
 33
+>>>cortarNumero(1335, 8, 2)
+'Error: Indices fuera del rango del número'
 ```
 
